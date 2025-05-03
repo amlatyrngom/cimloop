@@ -4,6 +4,12 @@ import pytimeloop.timeloopfe.v4 as tl
 from pytimeloop.timeloopfe.v4.output_parsing import MultipliableDict
 import yaml
 
+from pytimeloop.timeloopfe.v4.output_parsing import (
+    OutputStats,
+    OutputStatsList,
+)
+
+
 
 class MacroOutputStats(tl.output_parsing.OutputStats):
     def __init__(self, *args, scale_computes: bool = True, **kwargs):
@@ -57,11 +63,69 @@ class MacroOutputStats(tl.output_parsing.OutputStats):
             output_stats.mapping,
             scale_computes=scale_computes,
         )
+    
+    @staticmethod
+    def fixed_aggregate(tests: List["OutputStats"]) -> "OutputStats":
+        """
+        Aggregate a list of OutputStats into a single OutputStats object.
+
+        Args:
+            tests (List[OutputStats]): A list of OutputStats objects to aggregate.
+        """
+        results = {}
+
+        for grab_last in ["cycle_seconds", "per_component_area", "variables"]:
+            results[grab_last] = getattr(tests[-1], grab_last)
+
+        for to_sum in ["computes", "cycles"]:
+            results[to_sum] = sum(getattr(t, to_sum) for t in tests)
+
+        # Sum
+        results["per_component_energy"] = MultipliableDict({})
+        for t in tests:
+            for k, v in t.per_component_energy.items():
+                results["per_component_energy"][k] = (
+                    results["per_component_energy"].get(k, 0) + v
+                )
+
+        # Weighted average
+        results["percent_utilization"] = (
+            sum(t.percent_utilization * t.computes for t in tests) / results["computes"]
+        )
+
+        results["mapping"] = None
+
+        return OutputStats(**results)
+
+
+    @staticmethod
+    def fixed_aggregate_by(
+        tests: List["OutputStats"], *keys: Union[List[str], str]
+    ) -> "OutputStatsList":
+        """
+        Aggregate a list of OutputStats objects by a set of keys. OutputStats with
+        equal values for the keys will be aggregated together. OutputStats with
+        different values for the keys will be aggregated separately and returned
+        as a list.
+
+        Args:
+            tests (List[OutputStats]): A list of OutputStats objects to aggregate.
+            keys (List[str]): The keys to aggregate by.
+
+        Returns:
+            OutputStatsList: A list of aggregated OutputStats objects.
+        """
+        to_agg = {}
+        for t in tests:
+            key = tuple(t.access(k) for k in keys)
+            to_agg[key] = to_agg.get(key, []) + [t]
+        return OutputStatsList(MacroOutputStats.fixed_aggregate(v) for v in to_agg.values())
+
 
     @staticmethod
     def aggregate(*args, **kwargs):
         return MacroOutputStats.from_output_stats(  # Don't re-scale
-            tl.output_parsing.OutputStats.aggregate(*args, **kwargs),
+            MacroOutputStats.fixed_aggregate(*args, **kwargs),
             scale_computes=False,
         )
 
@@ -70,7 +134,7 @@ class MacroOutputStats(tl.output_parsing.OutputStats):
         return MacroOutputStatsList(
             [
                 MacroOutputStats.from_output_stats(t, scale_computes=False)
-                for t in tl.output_parsing.OutputStats.aggregate_by(*args, **kwargs)
+                for t in MacroOutputStats.fixed_aggregate_by(*args, **kwargs)
             ]
         )
 

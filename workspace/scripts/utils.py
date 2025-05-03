@@ -98,7 +98,8 @@ def get_spec(
 
     if not extra_print:
         extra_print = f"{os.getpid()}.{threading.current_thread().ident}"
-
+    print(f"Paths:\n{paths}")
+    print(f"Parse data:\n{jinja_parse_data}")
     spec = tl.Specification.from_yaml_files(
         *paths, processors=[ArrayProcessor], jinja_parse_data=jinja_parse_data
     )

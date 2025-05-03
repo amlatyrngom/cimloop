@@ -210,7 +210,7 @@ architecture:
     name: MRR
     subclass: albireo_mrr
     <<<: [*component_defaults, *keep_inputs, *keep_weights, *no_temporal_reuse]
-    attributes: {n_instances: 2}
+    attributes: {n_instances: 2, width: ENCODED_INPUT_BITS}
 
   - !Component # Put laser down here -> power is proportional to the number of endpoints
     name: laser
