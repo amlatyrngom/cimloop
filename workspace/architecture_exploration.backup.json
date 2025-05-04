@@ -1,0 +1,164 @@
+{
+  "per_architecture": {
+    "Weight Processing": [
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs",
+        9.473991854402809e-14
+      ],
+      [
+        "5 Columns, 6 PLCUs, 9 PLCGs",
+        9.48371320583338e-14
+      ],
+      [
+        "5 Columns, 9 PLCUs, 9 PLCGs",
+        9.489426608817307e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs",
+        5.894812514373838e-14
+      ],
+      [
+        "7 Columns, 6 PLCUs, 9 PLCGs",
+        5.892895229081097e-14
+      ],
+      [
+        "7 Columns, 9 PLCUs, 9 PLCGs",
+        5.886037883052402e-14
+      ]
+    ],
+    "Input Processing": [
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs",
+        7.661376741310286e-15
+      ],
+      [
+        "5 Columns, 6 PLCUs, 9 PLCGs",
+        7.767936800902381e-15
+      ],
+      [
+        "5 Columns, 9 PLCUs, 9 PLCGs",
+        8.016190145454272e-15
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs",
+        1.289055263252882e-14
+      ],
+      [
+        "7 Columns, 6 PLCUs, 9 PLCGs",
+        1.2615777605813897e-14
+      ],
+      [
+        "7 Columns, 9 PLCUs, 9 PLCGs",
+        1.2416083542257378e-14
+      ]
+    ],
+    "Output Processing": [
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs",
+        2.2509905628977134e-14
+      ],
+      [
+        "5 Columns, 6 PLCUs, 9 PLCGs",
+        1.1659190957653104e-14
+      ],
+      [
+        "5 Columns, 9 PLCUs, 9 PLCGs",
+        8.175429317407332e-15
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs",
+        6.05913533764506e-14
+      ],
+      [
+        "7 Columns, 6 PLCUs, 9 PLCGs",
+        3.095269336504425e-14
+      ],
+      [
+        "7 Columns, 9 PLCUs, 9 PLCGs",
+        2.0285424315608375e-14
+      ]
+    ],
+    "Other": [
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs",
+        5.0941253985031355e-14
+      ],
+      [
+        "5 Columns, 6 PLCUs, 9 PLCGs",
+        5.077004991967594e-14
+      ],
+      [
+        "5 Columns, 9 PLCUs, 9 PLCGs",
+        5.111850015175418e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs",
+        7.002904802583021e-14
+      ],
+      [
+        "7 Columns, 6 PLCUs, 9 PLCGs",
+        6.96190679798815e-14
+      ],
+      [
+        "7 Columns, 9 PLCUs, 9 PLCGs",
+        6.866526274018996e-14
+      ]
+    ]
+  },
+  "Energy Efficiency": {
+    "": [
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs",
+        11.373170770602805
+      ],
+      [
+        "5 Columns, 6 PLCUs, 9 PLCGs",
+        12.118692187051801
+      ],
+      [
+        "5 Columns, 9 PLCUs, 9 PLCGs",
+        12.330122834438336
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs",
+        9.878539446661252
+      ],
+      [
+        "7 Columns, 6 PLCUs, 9 PLCGs",
+        11.62003702012013
+      ],
+      [
+        "7 Columns, 9 PLCUs, 9 PLCGs",
+        12.482279108956426
+      ]
+    ]
+  },
+  "Compute Density": {
+    "": [
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs",
+        0.12261321076385773
+      ],
+      [
+        "5 Columns, 6 PLCUs, 9 PLCGs",
+        0.12089606309276016
+      ],
+      [
+        "5 Columns, 9 PLCUs, 9 PLCGs",
+        0.11619717381628115
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs",
+        0.0657683807634593
+      ],
+      [
+        "7 Columns, 6 PLCUs, 9 PLCGs",
+        0.06416744728990956
+      ],
+      [
+        "7 Columns, 9 PLCUs, 9 PLCGs",
+        0.06526658058656913
+      ]
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 from typing import Any, List, Dict, Union
 import matplotlib.pyplot as plt
 import numpy as np
+import json
 
 PRINT_ERRORS = False
 
@@ -67,7 +68,12 @@ def bar_side_by_side(
     x = np.arange(len(result))
 
     print_errors(result, consolidate_keys(result, missing_ok=True))
-
+    tick_labels = list(result.keys())
+    plot_data = {}
+    for key in consolidate_keys(result, missing_ok=missing_ok):
+        vals = [r[key] for r in result.values()]
+        plot_data[key] = list(zip(tick_labels, vals))
+    print(json.dumps(plot_data, indent=2))
     for i, key in enumerate(consolidate_keys(result, missing_ok=missing_ok)):
         rects = ax.bar(
             x - width / 2 + i * width,
@@ -85,6 +91,7 @@ def bar_side_by_side(
         ax.legend(loc=legend_loc)
     if not ax_provided:
         plt.show()
+    return plot_data
 
 
 def bar_stacked(
@@ -111,7 +118,12 @@ def bar_stacked(
     bottom = np.zeros(len(result))  # Initialize the bottom array with zeros
 
     print_errors(result, consolidate_keys(result, missing_ok=True))
-
+    tick_labels = list(result.keys())
+    plot_data = {}
+    for component in consolidate_keys(result, missing_ok=missing_ok):
+        vals = [r.get(component, 0) for r in result.values()]
+        plot_data[component] = list(zip(tick_labels, vals))
+    print(json.dumps(plot_data, indent=2))
     for component in consolidate_keys(result, missing_ok=missing_ok):
         values = [components.get(component, 0) for components in result.values()]
         ax.bar(x, values, width, label=component, bottom=bottom)
@@ -127,6 +139,7 @@ def bar_stacked(
         ax.legend(loc=legend_loc)
     if not ax_provided:
         plt.show()
+    return plot_data
 
 
 def plot(

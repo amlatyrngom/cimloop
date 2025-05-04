@@ -173,22 +173,29 @@ def test_explore_architectures(dnn_name: str):
             layer=l,
             variables=dict(
                 SCALING=f'"{s}"',
-                N_COLUMNS=x,
-                N_ROWS=y,
-                N_STAR_COUPLED_GROUPS_OF_ROWS=z,
+                N_COLUMNS=n_cols,
+                N_ROWS=3,
+                N_STAR_COUPLED_GROUPS_OF_ROWS=3,
                 GLB_DEPTH_SCALE=g,
                 N_PLCU=n_plcu,
                 N_PLCG=n_plcg,
+                INPUT_BITS=bits,
+                OUTPUT_BITS=bits,
+                WEIGHT_BITS=bits,
+                BITS_PER_CELL=bits,
+                ADC_RESOLUTION=bits,
+                VOLTAGE_DAC_RESOLUTION=bits,
             ),
             system="ws_dummy_buffer_one_macro",
             callfunc=callfunc,
         )
         for l in layer_paths
         for s in ["aggressive"]
-        for x, y, z in [(5, 3, 3), (7, 3, 1)]
+        for n_cols in [3, 5, 7]
         for g in [1]
-        for n_plcu in [3, 9, 15]
-        for n_plcg in [9, 27, 45]
+        for n_plcu in [3, 5, 7] # [3, 9, 15] # Can affect accuracy due to AWG cross-talk.
+        for n_plcg in [9] # [9, 27, 45] # Does not seem to affect accuracy at all.
+        for bits in [6, 7, 8]
     )
 
     results.combine_per_component_energy(
@@ -204,7 +211,7 @@ def test_explore_architectures(dnn_name: str):
     )
     results.combine_per_component_energy(["laser", "MRR", "global_buffer"], "Other")
     results.clear_zero_energies()
-    return results.aggregate_by("N_COLUMNS", "N_PLCU", "N_PLCG")
+    return results
 
 
 def test_full_dnn(dnn_name: str):
@@ -257,7 +264,7 @@ def test_full_dnn(dnn_name: str):
     ]
 
     def callfunc(spec):  # Speed up the test by reducing the victory condition
-        spec.mapper.victory_condition = 10
+        spec.mapper.victory_condition = 2
 
     results = utl.parallel_test(
         utl.delayed(utl.run_layer)(

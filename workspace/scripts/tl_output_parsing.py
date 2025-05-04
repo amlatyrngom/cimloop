@@ -95,7 +95,7 @@ class MacroOutputStats(tl.output_parsing.OutputStats):
 
         results["mapping"] = None
 
-        return OutputStats(**results)
+        return OutputStats(**results, accesses=None)
 
 
     @staticmethod

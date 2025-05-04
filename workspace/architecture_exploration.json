@@ -1,0 +1,668 @@
+{
+  "per_architecture": {
+    "Weight Processing": [
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        1.4993852573537762e-13
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        1.5070019024065653e-13
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        1.5156312706475075e-13
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        1.5007435111474805e-13
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        1.5077346581415623e-13
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        1.5165077179450366e-13
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        1.5019547283128937e-13
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        1.5093850264547287e-13
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        1.517619134514345e-13
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        9.372867928060923e-14
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        9.427824239410141e-14
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        9.473991854402809e-14
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        9.377216988547238e-14
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        9.432029326675373e-14
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        9.481456759645524e-14
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        9.38632199397613e-14
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        9.445049656651478e-14
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        9.487468433309719e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        5.83458069755616e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        5.851225132146872e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        5.894812514373838e-14
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        5.821683145374675e-14
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        5.841507283227891e-14
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        5.883614907150591e-14
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        5.819852457040251e-14
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        5.853568333200545e-14
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        5.881042622335818e-14
+      ]
+    ],
+    "Input Processing": [
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        1.1935085044370913e-14
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        1.1932501278837716e-14
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        1.1948928592825597e-14
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        1.2089041443403863e-14
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        1.2092900911883986e-14
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        1.2103293400902544e-14
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        1.245087262374805e-14
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        1.2448103321063524e-14
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        1.2445345038419205e-14
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        7.66628184123906e-15
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        7.668110354672887e-15
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        7.661376741310286e-15
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        7.93644551565557e-15
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        7.93621467296786e-15
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        7.939065673094988e-15
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        7.912416093555857e-15
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        7.9087698434491e-15
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        7.907335073198988e-15
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        1.2900294394740399e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        1.2908063172797206e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        1.289055263252882e-14
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        1.2553211346458516e-14
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        1.2542823340700852e-14
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        1.2556168310033832e-14
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        1.2526139031497008e-14
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        1.2513007180260706e-14
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        1.2512512151280028e-14
+      ]
+    ],
+    "Output Processing": [
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        5.070210744442328e-15
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        9.30222318832921e-15
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        2.2720534196333755e-14
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        3.290168747285955e-15
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        6.029598696150393e-15
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        1.472887559068222e-14
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        2.3411915429923583e-15
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        4.2956808279837254e-15
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        1.0485507056269052e-14
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        5.023451818893563e-15
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        9.214095080068559e-15
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        2.2509905628977134e-14
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        3.2623416156921033e-15
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        5.97647103477419e-15
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        1.4594965843777268e-14
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        2.321097126100578e-15
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        4.259209359724213e-15
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        1.0411604932880038e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        1.3546829740180412e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        2.485788512986103e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        6.05913533764506e-14
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        8.315086705612049e-15
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        1.5264805599544438e-14
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        3.7278403120462995e-14
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        6.049737740501033e-15
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        1.1096493634505475e-14
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        2.70701847798212e-14
+      ]
+    ],
+    "Other": [
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        5.016489598083476e-14
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        5.038254865093719e-14
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        5.0472607266122204e-14
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        5.0322537967461625e-14
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        5.05072915759613e-14
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        5.053874937005254e-14
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        5.0140848480178844e-14
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        5.029785140719855e-14
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        5.034980832465012e-14
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        5.0660647953592094e-14
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        5.087066740234219e-14
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        5.0941253985031355e-14
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        5.079120129076125e-14
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        5.096844421094207e-14
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        5.1025109974364666e-14
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        5.0642503338957757e-14
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        5.0809671276974746e-14
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        5.086570836800615e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        6.931044991975067e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        6.97285120293126e-14
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        7.002904802583021e-14
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        6.920300245892892e-14
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        6.946911679311828e-14
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        6.965651012269118e-14
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        6.878566220532401e-14
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        6.90762695205084e-14
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        6.919619505624387e-14
+      ]
+    ]
+  },
+  "Energy Efficiency": {
+    "": [
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        9.211974641016909
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        8.996144386428778
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        8.449328634663681
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        9.268867157852045
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        9.115634960773836
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        8.732797311191147
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        9.296774089361582
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        9.175147866679492
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        8.887207276381705
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        12.73244179467935
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        12.343308241422715
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        11.373170770602805
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        12.840089157281891
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        12.562701764734852
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        11.878339028323971
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        12.924970067439855
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        12.704208475547805
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        12.190711537085521
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        12.978300583863414
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        12.047705662499105
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        9.878539446661252
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        13.48725601638489
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        12.845890159326284
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        11.21533706879116
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        13.740032473565547
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        13.225636650738943
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        11.933934819673178
+      ]
+    ]
+  },
+  "Compute Density": {
+    "": [
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        0.07939122611200991
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        0.07936055909609141
+      ],
+      [
+        "3 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        0.07930960177827259
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        0.07691001929668745
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        0.07689219653272031
+      ],
+      [
+        "3 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        0.07686255461986576
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        0.07738225271251685
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        0.07736949919122034
+      ],
+      [
+        "3 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        0.07734807053922593
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        0.1228172273771313
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        0.12274048099595235
+      ],
+      [
+        "5 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        0.12261321076385773
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        0.11914111800125679
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        0.11909637008509838
+      ],
+      [
+        "5 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        0.11902188881070272
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        0.11971736337713401
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        0.11968531260556986
+      ],
+      [
+        "5 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        0.11963165565124774
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 6 bits",
+        0.06591742114446902
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 7 bits",
+        0.06586135308592465
+      ],
+      [
+        "7 Columns, 3 PLCUs, 9 PLCGs, 8 bits",
+        0.0657683807634593
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 6 bits",
+        0.0646443469544425
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 7 bits",
+        0.0646113592969142
+      ],
+      [
+        "7 Columns, 5 PLCUs, 9 PLCGs, 8 bits",
+        0.06455641764776739
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 6 bits",
+        0.06469901295142602
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 7 bits",
+        0.06467540237069637
+      ],
+      [
+        "7 Columns, 7 PLCUs, 9 PLCGs, 8 bits",
+        0.06463600304962054
+      ]
+    ]
+  }
+}

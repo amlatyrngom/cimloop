@@ -98,8 +98,6 @@ def get_spec(
 
     if not extra_print:
         extra_print = f"{os.getpid()}.{threading.current_thread().ident}"
-    print(f"Paths:\n{paths}")
-    print(f"Parse data:\n{jinja_parse_data}")
     spec = tl.Specification.from_yaml_files(
         *paths, processors=[ArrayProcessor], jinja_parse_data=jinja_parse_data
     )
@@ -116,11 +114,13 @@ def run_mapper(
     output_dir = get_run_dir()
 
     run_prefix = f"{output_dir}/timeloop-mapper"
+    spec.mapper.diagnostics = True
     mapper_result = tl.call_mapper(
         specification=spec,
         output_dir=output_dir,
         log_to=os.path.join(output_dir, f"{run_prefix}.log"),
     )
+    accelergy_verbose = True
     if accelergy_verbose:
         tl.call_accelergy_verbose(
             specification=spec,

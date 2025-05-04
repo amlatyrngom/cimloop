@@ -1,0 +1,22 @@
+#!/usr/bin/with-contenv bash
+
+UMASK_SET=${UMASK_SET:-022}
+umask "$UMASK_SET"
+
+# Set default environment variables
+source /usr/local/src/dot.bashrc
+
+# Set HOME/SHELL so the user jupyter notebook shell works
+export HOME=/home/workspace
+export SHELL=/bin/bash
+
+# Switch to user home directory
+cd $HOME
+
+echo "Running Python."
+s6-setuidgid workspace \
+        /usr/bin/python3 /home/workspace/models/arch/1_macro/albireo_isca_2021/albireo_main.py
+
+# Tell s6-svscan to go into its shutdown/finish stage—or kill init if it's not up yet
+echo "Stopping s6"
+s6-svscanctl -t /var/run/s6/services || kill -TERM 1

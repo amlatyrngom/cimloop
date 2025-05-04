@@ -12,6 +12,39 @@ variables:
   N_STAR_COUPLED_GROUPS_OF_ROWS: 3
 
   # ===========================================================================
+  # NOTES
+  # ===========================================================================
+  # - N_COLUMNS=N_d is the number of outputs in each cycle = number of parallel receptive fields.
+  #     - N_d=5 in the original paper.
+  # - N_ROWS is the number of input rows (single channel) in each cycle.
+  #    - 3 in the original paper.
+  # - N_STAR_COUPLED_ROWS is basically the number of channels in the input.
+  #     - 3 in the original paper.
+  # - Therefore, the number of weights in each cycle is N_m=N_ROWS * N_STAR_COUPLED_GROUPS_OF_ROWS.
+  #     - N_m=9 in the original paper.
+  #     - Also the size of a receptive field.
+  # - Let's not change the shape of the receptive field. So fix N_ROWS=N_START_COUPLED_GROUPS_OF_ROWS=3.
+  # - The total number of inputs (with duplicates) to the PLCU is: #weights * N_COLUMNS
+  # - The total number of distinct inputs (wavelengths) to the PLCU is:
+  #    - 3 * (3 + N_COLUMNS - 1)
+  #    - This is the number that affects MRR cross-talk.
+  #    - For N_COLUMNS=5, this is 3 * 7 = 21 (original paper).
+  #    - For N_COLUMNS=7, this is 3 * 9 = 27.
+  #    - For N_COLUMNS=9, this is 3 * 11 = 33.
+  #    - For N_COLUMNS=11, this is 3 * 13 = 39.
+  # - The number distinct inputs (wavelengths) to the PLCG is:
+  #    - N_PLCU * #distinct inputs to the PLCU
+  #    - This is the number that affects AWG cross-talk.
+  #    - For (N_PLCU=3, N_COLUMNS=5), this is 3 * 21 = 63 (original paper).
+  #    - For (N_PLCU=3, N_COLUMNS=7), this is 3 * 27 = 81.
+  #    - For (N_PLCU=3, N_COLUMNS=9), this is 3 * 33 = 99.
+  #    - For (N_PLCU=3, N_COLUMNS=11), this is 3 * 39 = 117.
+  #    - For (N_PLCU=6, N_COLUMNS=5), this is 6 * 21 = 126.
+  #    - For (N_PLCU=6, N_COLUMNS=7), this is 6 * 27 = 162.
+  #    - For (N_PLCU=6, N_COLUMNS=9), this is 6 * 33 = 198.
+  
+
+  # ===========================================================================
   # Set by CiM Processor
   # ===========================================================================
   ARRAY_WORDLINES:        Should have been set by ArrayProcessor.
